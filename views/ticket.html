@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket</title>
+</head>
+<style>
+  .container{
+      display: inline-block;
+      background-color: #1C1D22;
+      border: 1px solid #333333;
+      border-radius: 0.4rem;
+      margin-top: 100px;
+      padding: 30px;
+  }
+
+  .header-text{
+      text-align: center;
+  }
+
+  .header-text h2{
+      font-size: 32px;
+      color: #fff;
+  }
+
+  .header-text h5{
+      font-size: 14px;
+      color: var(--main-red);
+  }
+
+  input[type="text"], input[type="password"]{
+      background-color: #2C2E37;
+      padding: 8px 12px;
+      width: 300px;
+      font-size: 18px;
+      font-weight: 200;
+      border-radius: 0.3rem;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      margin: 10px 20px;
+  }
+
+  input[type="text"]:focus, input[type="password"]:focus{
+      border: 1px solid #4D6CFA;
+  }
+
+  button[type="submit"]{
+      padding: 8px 16px;
+      outline: none;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      font-weight: 500;
+      color: #000;
+      text-decoration: none;
+      margin-left: 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+
+  button[type="submit"]:hover{
+      filter: brightness(90%);
+  }
+</style>
+<body>
+  <form action="/register" class="container">
+    <input type="text" name="day" placeholder="Day" required />
+    <input type="text" name="age" placeholder="age" required />
+    <input type="text" name="discount" placeholder="discount" required />
+    <input type="submit" value="Buy Ticket" />
+  </form>
+</body>
+</html>
