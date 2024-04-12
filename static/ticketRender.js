@@ -1,7 +1,7 @@
 // ticketRender.js
 
 window.onload = function onload() {
-  fetch('https://ad340b86-d23f-4b87-bf99-8cb31a259863-00-3oz22ct7ofggo.janeway.replit.dev/api')
+  fetch('https://cs1-tickets.onrender.com/api')
     .then(response => response.json())
     .then(data => renderSeats(data))
     .catch(error => alert('Error fetching seat data: ' + error.message));
