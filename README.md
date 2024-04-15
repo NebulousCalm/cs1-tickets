@@ -1,4 +1,5 @@
-<a align="center" href="https://cs1-tickets.onrender.com/" target="_blank">web version (let it start)</a>
+[<a align="center" href="https://cs1-tickets.onrender.com/" target="_blank">web version (let it start)</a>
+](https://replit.com/@Reference-Code/tickets)
 
 <h1 align="center">Tickets</h1>
 <p align="center">i got kinda bored over the weekend.</p>
@@ -195,4 +196,22 @@ div{ /* the container for all of the squares */
   display: grid;
   grid-template-columns: 16.5vw 16.5vw 16.5vw 16.5vw 16.5vw 16.5vw; // creates 6 colums for the grid all 16.5 viewport(screen) width wide
 }
+```
+
+`index.html` landing page
+```html
+<!DOCTYPE html> <!-- declares its an html file -->
+<html lang="en"> <!-- specifiying the language for browsers (ie for translators)
+<head> <!-- all setup things go in the 'head' tag (ie, linking, meta data etc)
+  <meta charset="UTF-8"> <!-- specifying the encoding -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for responsiveness -->
+  <script src="/static/ticketRender.js" defer></script> <!-- linking my javascript file -->
+  <link rel="stylesheet" href="/static/ticket.styles.css" /> <!-- linking my stlyesheet -->
+  <title>Movie Tickets</title> <!-- title for the page seen on chrome -->
+</head>
+<body onload="onload();">
+  <div id="appendee"></div>
+</body>
+</html>
 ```
